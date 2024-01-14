@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+:root{
+    --el-color: #086972;
+
+}
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    color: #086972;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+h3{
+    font-weight: 600;
+}
+p{
+    font-weight: 300;
+}
+i{
+    color:#086972
+}
+.m-t{
+    margin-top: 150px;
+}
+.m-b{
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.clearfix::after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+
+
+
+.active{
+    background-color: var(--el-color);
+    border-radius: 20px;
+    padding: 7px 25px;
+    color: #fff;
+}
+
+#res-menu{
+    display: none;
+}
+
+#sign-one,#sign-two{
+    display: none;
+}
+
+/* Showcase Area */
+.showcase{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(83, 94, 252, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #086972;
+}
+
+.showcase-container h1{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.showcase-content p {
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+.showcase-content h1{
+    color: #fff;
+
+}
+
+.showcase-content{
+    width: 50%;
+    margin: auto;
+    text-align:center;
+    transform: translateY(30vh);
+}
+
+.showcase-content .btn{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 1s all;
+}
+
+.showcase-content .btn:hover{
+    background-color: #fff;
+    color: #086972;
+    box-shadow: 5px 5px 50px #086972;
+}
+
+/* Hrvatski NP */
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-image{
+    height: 400px;
+    max-width: 400px;
+    background-image: url("../images/krka.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .about-content{
+    width: 50%;
+}
+.about .about-content h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.about .line{
+    width: 150px;
+    height: 6px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #086972;
+}
+.about p {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.about ul{
+    margin-top: 50px;
+    list-style: none;
+
+}
+.about ul li{
+    margin: 10px 0;
+}
+.about .fa-ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 200px;
+}
+
+
+
+/* Svjetski NP */
+
+.s-t{
+    margin-top: 15px;
+}
+.s-b{
+    margin-bottom: 150px;
+    
+}
+.svijet-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.svijet .svijet-image{
+    height: 400px;
+    max-width: 400px;
+    background-image: url("../images/galapagos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.svijet .svijet-content{
+    width: 50%;
+}
+.svijet .svijet-content h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.svijet .line{
+    width: 150px;
+    height: 6px;
+    margin-top: 50px;
+    background-color: #086972;
+    margin-left: 50px;
+}
+.svijet p {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.svijet ul{
+    margin-top: 50px;
+    list-style: none;
+}
+.svijet ul li{
+    margin: 10px 0;
+}
+.svijet .fa-ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 200px;
+}
+.svijet .fa-ul li{
+    float: left;
+}
+section{
+    padding-bottom: 100px;
+}
+
+
+
+/* Footer */
+
+footer {
+    clear: both;
+    position: relative;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    bottom: 0;
+    
+}
+
+footer p{
+    color: #ffffff;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p img{
+    width: 13px;
+    height: 13px;
+}
+
+
+/* Media query */
+
+
+
+
+
+/* showcase res */
+
+.showcase-content{
+    width: 90%;
+    transform: translateY(20vh);
+}
+
+/* hr NP res */
+
+.about .about-image{
+    width: 100%;
+    display: block;
+}
+
+.about .about-image img {
+    width: 70%;
+}
+
+.about .about-content{
+    width: 100%;
+    padding: 20px;
+}
+
+.about h2{
+    text-align: center;
+}
+
+/* svjetski NP res */
+
+.svijet .svijet-image{
+    width: 100%;
+    display: block;
+}
+
+.svijet .svijet-image img {
+    width: 70%;
+}
+
+.svijet-image .svijet-content{
+    width: 100%;
+    padding: 20px;
+}
+
+.svijet h2{
+    text-align: center;
+}
+/* Header section */
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.navBar h2{
+    display: flex;
+    margin-left: 20px;
+}
+
+.navLinks{
+    display: flex;
+    left: 150px;
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+}
+.mobileMenu{
+    display: none;
+}
+
+@media (max-width: 768px){
+ 
+    .navLinks{
+        position: fixed;
+        inset: 0 0 0 50%;
+        z-index: 1000;
+        gap: 30px;
+        
+        flex-direction: column;
+        padding: 120px 20px;
+
+        background: white;
+
+        transform: translateX(110%);
+        transition: transform .5s ease-in;
+    }
+
+    .navLinks[data-visible="true"]{
+        transform: translateX(10%);
+    }
+    .mobileMenu[aria-expanded="true"]{
+        background: url("../icon/menuClose.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    .mobileMenu{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        cursor: pointer;
+        background: url("../icon/burger.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        border: 0;
+        width: 45px;
+        aspect-ratio: 1;
+        top: 40px;
+        right: 20px;
+    }
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about-image{
+        height: 200px;
+        max-width: 200px;
+    }
+    .about .about-content{
+        width: 100%;
+    }
+    .about .about-content h2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .about .line{
+        width: 100px;
+        height: 4px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: #086972;
+    }
+    .about p {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .about ul{
+        margin-top: 30px;
+    }
+    .about .fa-ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 200px;
+    }
+    .svijet-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .svijet .svijet-image{
+        height: 200px;
+        max-width: 200px;
+    }
+    .svijet .svijet-content{
+        width: 100%;
+    }
+    .svijet .svijet-content h2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .svijet .line{
+        width: 100px;
+        height: 6px;
+        margin-top: 30px;
+        background-color: #086972;
+        margin-left: 0px;
+    }
+    .svijet p {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .svijet ul{
+        margin-top: 30px;
+        list-style: none;
+    }
+    .svijet ul li{
+        margin: 10px 0;
+    }
+    .svijet .fa-ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 200px;
+    }
+
+}
+@media (min-width:768px) and (max-width: 900px)
+{
+    .mobileMenu{
+        display: none;
+    }
+    .navLinks a{
+        font-size: 15px ;
+    }
+    /* Header section */
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+}
